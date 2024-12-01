@@ -1,0 +1,112 @@
+body {
+    padding-top: 200px;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #e5dede, #dad4d3);
+  }
+  
+  .container {
+    padding-top: 200px;
+    width: 500px;
+    position: absolute;
+    perspective: 1200px;
+  }
+  
+  .form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #e4e2e8, #c2fbc411);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(194, 6, 6, 0.2);
+    color: white;
+    transform-origin: center;
+  }
+  
+  .login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(135deg, #e8e7eb, #918a8f);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    color: white;
+    transform-origin: center;
+    z-index: 2;
+    transform: rotateY(0deg);
+  }
+  
+  
+  
+  h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+  }
+  
+  .input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .input-group input {
+    width: 80%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background: linear-gradient(135deg, #2575fc, #6a11cb);
+  }
+  
+  .switch-form {
+    margin-top: 10px;
+  }
+  
+  .switch-form a {
+    color: #ffd700;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .switch-form a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  .form-container {
+    animation: slideIn 0.5s ease-in-out;
+  }
